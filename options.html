@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设定黑名单</title>
+    <link rel="stylesheet" href="css/pure-min.css">
+    <style>
+        .content {
+            margin: 0 auto;
+            max-width: 330px;
+        }
+        table {
+            width: 100%;
+        }
+        .button-small {
+            font-size: 85%;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h2>设定黑名单 bbs.byr.cn</h2>
+        <p id="message"></p>
+        <div class="pure-form">
+            <input id="username" class="pure-input-1-2" type="text" placeholder="输入需要屏蔽的ID">
+            <button id="add" class="pure-button button-small">添加</button>
+        </div>
+        <br />
+        <table class="pure-table pure-table-horizontal">
+            <thead>
+                <tr><th width="100%">ID</th><th>操作</th></tr>
+            </thead>
+            <tbody id="blacklist">
+            </tbody>
+        </table>
+    </div>
+    <script src="js/options.js"></script>
+</body>
+</html>
